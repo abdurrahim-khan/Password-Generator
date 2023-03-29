@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    
+    <div id="container">
+        <h1>Password Generator</h1>
+        <div class="displayarea">
+            <input type="text" id="display-box">
+            <span class="material-icons" onclick="copy()">content_copy</span>
+        </div>
+        <div class="main-area">
+            <div class="row">
+                <label for="lcase">Include lowercase text?</label><input type="checkbox" id="lcase" checked class="preference">
+            </div>
+            <div class="row">
+                <label for="ucase">Include uppercase text?</label><input type="checkbox" id="ucase" class="preference">
+            </div>
+            <div class="row">
+                <label for="num">Include numbers?</label><input type="checkbox" id="num" class="preference">
+            </div>
+            <div class="row">
+                <label for="splchar">Include special characters?</label><input type="checkbox" id="splchar" class="preference">
+            </div>
+        </div>
+        <div class="button">
+            <button type="button" id="btn" onclick="func()">Generate Password</button>
+        </div>
+        
+    </div>
+</body>
+</html>
